@@ -19,19 +19,13 @@ img {
   overflow: hidden;
 }
 
-.page-section {
-  padding: 1.2rem 0;
-  @include atMedium {
-    padding: 4.5rem 0;
-  }
-}
-
 .text-center {
   text-align: center
 }
 
 .b-margin {
   margin-bottom: 1rem;
+
   @include atSmall {
     margin-bottom: 3.875rem;
   }

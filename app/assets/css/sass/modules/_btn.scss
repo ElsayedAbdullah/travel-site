@@ -1,0 +1,19 @@
+.btn {
+  padding: 0.75rem 1.2rem;
+  background-color: $mainColor;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+
+  &__orange {
+    background-color: $mainOrange;
+  }
+
+  &__large {
+    padding: 1.1rem 1.9rem;
+
+    @include atSmall {
+      font-size: 1.2rem;
+    }
+  }
+}

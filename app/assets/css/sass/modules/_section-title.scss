@@ -7,6 +7,9 @@
     font-size: 3.75rem;
   }
 
+  &--blue {
+    color: $mainColor;
+  }
 
   &__icon {
     display: block;
@@ -16,6 +19,8 @@
       margin-right: 0.6rem;
       display: inline-block;
       margin-bottom: 0;
+      position: relative;
+      top: 8px;
     }
   }
 }

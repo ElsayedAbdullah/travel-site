@@ -1,0 +1,39 @@
+.testimonial {
+  background-color: rgba(#fff, 0.8);
+  padding: 0 15px 1px 15px;
+  margin-bottom: 98px;
+
+  @include atLarge {
+    margin-bottom: 0;
+    padding: 0 1.8rem 1px 1.8rem;
+  }
+
+  &__photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid rgba(#fff, 0.8);
+    position: relative;
+    top: -80px;
+    margin: 0 auto -80px;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    color: $mainColor;
+    margin: 0;
+    font-weight: 500;
+  }
+
+  &__subtitle {
+    font-size: 0.975rem;
+    color: $mainOrange;
+    margin: 0.25rem auto 1rem;
+    font-weight: 500;
+  }
+
+  &--last {
+    margin-bottom: 0
+  } 
+}

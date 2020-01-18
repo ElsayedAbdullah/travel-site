@@ -17,6 +17,13 @@ img {
   max-width: 1230px;
   margin: auto;
   overflow: hidden;
+  &--no-padding-until-large {
+    padding: 0;
+    @include atLarge {
+      padding: 0 15px;
+  }
+  }
+  
 }
 
 .text-center {

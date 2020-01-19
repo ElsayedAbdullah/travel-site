@@ -8,6 +8,12 @@ var concat = require("gulp-concat");
 var sourcemaps = require("gulp-sourcemaps");
 var connect = require("gulp-connect");
 
+/******** */
+// sprites
+// to make all icons with extend svg in one file to increase the speed of the website
+require("./gulp/sprites");
+/******** */
+
 // copy all html files
 gulp.task("copyHtml", function() {
   gulp

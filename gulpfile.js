@@ -14,6 +14,11 @@ var connect = require("gulp-connect");
 require("./gulp/sprites");
 /******** */
 
+/******** */
+// webpack
+require("./gulp/webpack");
+/******** */
+
 // copy all html files
 gulp.task("copyHtml", function() {
   gulp
@@ -57,9 +62,9 @@ gulp.task("sass", function() {
 // scripts
 gulp.task("scripts", function() {
   gulp
-    .src("./app/assets/js/*.js")
+    .src("./app/assets/js/**/*.js")
     .pipe(concat("script.js"))
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(gulp.dest("dist/js"))
     .pipe(connect.reload());
 });
@@ -77,7 +82,7 @@ gulp.task("watch", function() {
   gulp.watch("./app/*.html", ["copyHtml"]);
   gulp.watch("./app/assets/images/**", ["imageMin"]);
   gulp.watch("./app/assets/css/**/*.scss", ["sass"]);
-  gulp.watch("./app/assets/js/*.js", ["scripts"]);
+  gulp.watch("./app/assets/js/**/*.js", ["webpack", "scripts"]);
 });
 
 gulp.task("default", ["watch", "connect"]);

@@ -1,0 +1,51 @@
+.primary-nav {
+  &--pull-right {
+    padding-top: 15px;
+
+    @include atMedium {
+      padding-top: 0;
+      float: right;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    margin-right: 0;
+
+    @include atMedium {
+      margin-right: 2rem;
+    }
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 0.5rem;
+
+    @include atMedium {
+      padding-right: 1rem;
+    }
+  }
+
+  li:last-child {
+    padding-right: 0;
+
+    @include atMedium {
+      padding-right: 1rem;
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 8px;
+    display: block;
+    background-color: rgba($mainColor, 0.5);
+
+    @include atMedium {
+      padding: 12px 0;
+      background-color: transparent;
+    }
+  }
+}

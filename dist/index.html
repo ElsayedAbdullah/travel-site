@@ -15,6 +15,7 @@
     content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
   <link rel="stylesheet"
     href="css/style.css">
+  <script src="js/vendor.js"></script>
 </head>
 
 <body>
@@ -86,19 +87,21 @@
         Ever since, we&rsquo;ve been working to make travel <strong>better for everyone.</strong></h3>
       <div class="text-center b-margin">
         <img sizes="(min-width: 970px) 976px, 100vw"
-          srcset="imgs/first-trip-low-res.jpg 565w, imgs/first-trip.jpg 768w, imgs/first-trip-hi-dpi.jpg 1952w"
+          class="lazyload"
+          data-srcset="imgs/first-trip-low-res.jpg 565w, imgs/first-trip.jpg 768w, imgs/first-trip-hi-dpi.jpg 1952w"
           alt="Couple walking down a street.">
       </div>
       <div class="row row--gutters">
         <div class="row__medium-4 row__medium-4-larger row__b-margin-until-medium">
           <picture>
             <source sizes="404px"
-              srcset="imgs/our-start.jpg 404w, imgs/our-start-hi-dpi.jpg 808w"
+              data-srcset="imgs/our-start.jpg 404w, imgs/our-start-hi-dpi.jpg 808w"
               media="(min-width: 1020px)">
             <source sizes="320px"
-              srcset="imgs/our-start-portrait.jpg 382w, imgs/our-start-portrait-hi-dpi.jpg 768w"
+              data-srcset="imgs/our-start-portrait.jpg 382w, imgs/our-start-portrait-hi-dpi.jpg 768w"
               media="(min-width: 800px)">
-            <img srcset="imgs/our-start-landscape.jpg 800w, imgs/our-start-landscape-hi-dpi.jpg 1600w"
+            <img class="lazyload"
+              data-srcset="imgs/our-start-landscape.jpg 800w, imgs/our-start-landscape-hi-dpi.jpg 1600w"
               alt="Our founder, Jane Doe">
           </picture>
         </div>
@@ -186,7 +189,7 @@
 
   <!-- Start Testimonials -->
   <div id="testimonials"
-    class="page-section page-section--testimonials page-section--no-b-padding"
+    class="page-section page-section--testimonials page-section--no-b-padding lazyload"
     data-matching-link="#testimonials-link">
     <div class="container container--no-padding-until-large">
 
@@ -199,7 +202,8 @@
           <div class="testimonial">
             <div class="testimonial__photo">
               <img sizes="160px"
-                srcset="imgs/testimonial-jane.jpg 160w, imgs/testimonial-jane-hi-dpi.jpg 320w"
+                class="lazyload"
+                data-srcset="imgs/testimonial-jane.jpg 160w, imgs/testimonial-jane-hi-dpi.jpg 320w"
                 alt="Jane Doe">
             </div>
             <h3 class="testimonial__title text-center">Jane Doe</h3>
@@ -217,7 +221,8 @@
           <div class="testimonial">
             <div class="testimonial__photo">
               <img sizes="160px"
-                srcset="imgs/testimonial-john.jpg 160w, imgs/testimonial-jane-hi-dpi.jpg 320w"
+                class="lazyload"
+                data-srcset="imgs/testimonial-john.jpg 160w, imgs/testimonial-jane-hi-dpi.jpg 320w"
                 alt="john Smith">
             </div>
             <h3 class="testimonial__title text-center">John Smith</h3>
@@ -234,7 +239,8 @@
           <div class="testimonial testimonial--last">
             <div class="testimonial__photo">
               <img sizes="160px"
-                srcset="imgs/testimonial-cat.jpg 160w, imgs/testimonial-jane-hi-dpi.jpg 320w"
+                class="lazyload"
+                data-srcset="imgs/testimonial-cat.jpg 160w, imgs/testimonial-jane-hi-dpi.jpg 320w"
                 alt="Cat McKitty">
             </div>
             <h3 class="testimonial__title text-center">Cat McKitty</h3>

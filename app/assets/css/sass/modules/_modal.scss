@@ -1,0 +1,46 @@
+.modal {
+  position: fixed;
+  background-color: rgba(#fff, 0.95);
+  z-index: 5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all 0.3s ease-out;
+
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  &__description {
+    line-height: 1.65;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    transform: scaleX(1.2);
+    transform-origin: 100% 0;
+    cursor: pointer;
+    color: $mainColor;
+    transition: color 0.3s ease-out;
+
+    &:hover {
+      color: $mainOrange;
+    }
+  }
+}

@@ -6,7 +6,7 @@ gulp.task("webpack", function(callback) {
     if (err) {
       console.log(err.toString());
     }
-    console.log(stats.toString());
+    // console.log(stats.toString());
     callback();
   });
 });

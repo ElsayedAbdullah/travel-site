@@ -27,7 +27,7 @@
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-smooth-scroll": "^2.2.0",
     "lazysizes": "^5.2.0",
     "normalize.css": "^8.0.1",
